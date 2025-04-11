@@ -11,18 +11,19 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
+        <Navbar />
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/upcoming" element={<UpcomingMovies />} />
-        <Route path="/top-rated" element={<TopRatedMovies />} />
+        <Route path="/top-rated" element={<TopRatedMovies />} /> */}
       </Routes>
     </Router>
-    <Navbar />
+
     </>
   );
 }

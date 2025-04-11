@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
-import loginBackground from '../assets/bg.jpeg'; // Import the image
+import loginBackground from '../assets/bg2.jpg'; // Import the image
 function Register() {
   const [user, setUser] = useState({ user_name: '', email: '', password: '' });
   const [error, setError] = useState('');
@@ -28,6 +28,7 @@ function Register() {
     <>
     <div style={{
       backgroundImage: `url(${loginBackground})`, // Use the imported image
+      background: `linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(${loginBackground}) no-repeat center center`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       height: '100vh',

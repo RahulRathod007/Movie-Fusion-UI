@@ -7,6 +7,8 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
+    
+  
     <div className="landing-page d-flex align-items-center justify-content-center">
       <div className="text-center text-white">
         <p className="display-4 fw-bold">Welcome to MovieFusion</p>
@@ -17,6 +19,7 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

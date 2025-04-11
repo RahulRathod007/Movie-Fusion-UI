@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { fetchMovies } from "../pages/api";
 import MovieList from "../components/MovieList";
 import Pagination from "../components/Pagination";
-
 const Home = () => {
   const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,8 +27,9 @@ const Home = () => {
     loadMovies();
   }, [currentPage]);
 
-  return (
+  return (    
     <div>
+     
       <h1 className="text-muted">All Movies</h1>
       {loading ? (
         <p>Loading...</p>
